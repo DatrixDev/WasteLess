@@ -16,6 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/index.js" defer></script>
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/base.css">
@@ -163,9 +164,7 @@
                 <input type="text" placeholder="Họ và tên">
                 <input type="email" placeholder="Email">
                 <input id="signup-password" type="password" placeholder="Mật khẩu">
-                <i id="signup-eye-icon" class="fa-solid fa-eye regit" onclick="togglePasswordVisibility('signup')"></i>
-                <i id="signup-eye-slash-icon" class="fa-solid fa-eye-slash regit"
-                    onclick="togglePasswordVisibility('signup')"></i>
+                <i id="signup-eye-toggle" class="fa-solid fa-eye-slash regit" onclick="togglePasswordVisibility('signup')"></i>
                 <button>Đăng kí</button>
             </form>
         </div>
@@ -182,9 +181,7 @@
                 <span>hoặc sử dụng Email mật khẩu</span>
                 <input type="email" placeholder="Email">
                 <input id="signin-password" type="password" placeholder="Mật khẩu">
-                <i id="signin-eye-icon" class="fa-solid fa-eye" onclick="togglePasswordVisibility('signin')"></i>
-                <i id="signin-eye-slash-icon" class="fa-solid fa-eye-slash"
-                    onclick="togglePasswordVisibility('signin')"></i>
+                <i id="signin-eye-toggle" class="fa-solid fa-eye-slash" onclick="togglePasswordVisibility('signin')"></i>
                 <a class="Forgot-password" href="#">Quên mật khẩu?</a>
                 <button>Đăng nhập</button>
             </form>
@@ -222,7 +219,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 
-    <script src="assets/js/index.js" r></script>
 
 
 </body>

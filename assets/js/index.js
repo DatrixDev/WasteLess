@@ -33,7 +33,17 @@
     });
 
 
-    
+//SECTION-ONE
+document.addEventListener('scroll', function () {
+    const heading = document.querySelector('.section-one h1');
+    const scrollY = window.scrollY;
+    const fadeStart = 0;
+    const fadeEnd = 150; 
+  
+    let opacity = 1 - (scrollY - fadeStart) / (fadeEnd - fadeStart);
+    heading.style.opacity = Math.max(opacity, 0);
+  });
+
 
 
 
@@ -111,27 +121,40 @@ const container = document.getElementById('container');
  
  registerBtn.addEventListener('click', () => {
      container.classList.add("active");
+     resetPasswordVisibility("signin");
  });
  
  loginBtn.addEventListener('click', () => {
      container.classList.remove("active");
+     resetPasswordVisibility("signup"); 
  });
-
  function togglePasswordVisibility(type) {
-    var passwordField = document.getElementById(type === 'signup' ? 'signup-password' : 'signin-password');
-    var eyeIcon = document.getElementById(type === 'signup' ? 'signup-eye-icon' : 'signin-eye-icon');
-    var eyeSlashIcon = document.getElementById(type === 'signup' ? 'signup-eye-slash-icon' : 'signin-eye-slash-icon');
-    
+    const passwordField = document.getElementById(type === 'signup' ? 'signup-password' : 'signin-password');
+    const eyeToggle = document.getElementById(type === 'signup' ? 'signup-eye-toggle' : 'signin-eye-toggle');
+
     if (passwordField.type === 'password') {
-        passwordField.type = 'text'; 
-        eyeIcon.style.display = 'none';
-        eyeSlashIcon.style.display = 'block'; 
+        passwordField.type = 'text';
+        eyeToggle.classList.remove('fa-eye-slash');
+        eyeToggle.classList.add('fa-eye');
     } else {
         passwordField.type = 'password';
-        eyeIcon.style.display = 'block';
-        eyeSlashIcon.style.display = 'none';
+        eyeToggle.classList.remove('fa-eye');
+        eyeToggle.classList.add('fa-eye-slash');
     }
 }
+
+function resetPasswordVisibility(type) {
+    const passwordField = document.getElementById(type === 'signup' ? 'signup-password' : 'signin-password');
+    const eyeToggle = document.getElementById(type === 'signup' ? 'signup-eye-toggle' : 'signin-eye-toggle');
+
+    // Reset về mặc định
+    passwordField.type = 'password';
+    eyeToggle.classList.remove('fa-eye');
+    eyeToggle.classList.add('fa-eye-slash');
+}   
+
+
+
 
 
 
@@ -177,7 +200,7 @@ function dragElement(elm) {
 
 //ĐÓNG FORM//
 function openForm(){
-    const container = document.getElementById('container');
+    const form = document.querySelector('.form');
     const registerBtn = document.getElementById('header-register');
     const loginBtn = document.getElementById('header-login');
     registerBtn.addEventListener('click', () => {
@@ -187,12 +210,15 @@ function openForm(){
     loginBtn.addEventListener('click', () => {
         container.classList.remove("active");
     });
-    document.querySelector('.form').style.display = 'block';
-
+    form.classList.add('show');
 }
 
   
 function closeForm() {
-    document.querySelector('.form').style.display = 'none';
+    const form = document.querySelector('.form');
+    form.classList.remove('show');
 }
+
+  
+
 
