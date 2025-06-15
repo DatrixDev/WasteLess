@@ -15,8 +15,7 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  
+
 
 
   <link rel="stylesheet" href="../assets/css/reset.css">
@@ -25,6 +24,8 @@
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/form.css">
   <link rel="stylesheet" href="../assets/css/pagesCSS/community.css">
+  <link rel="stylesheet" href="../assets/css/botChat.css">
+
 
 
 
@@ -32,8 +33,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-  <script src="../layout/header.js" defer> </script>
-  <script src="../layout/footer.js" defer></script>
+
 
   <link rel="icon" href="../assets/images/logo.png" type="image/png">
   <title>Waste Less - Cộng đồng</title>
@@ -45,9 +45,11 @@
   <header class="header"></header>
 
   <main class="community-page">
+    <div id="auth-form-container"></div>
+
     <!-- Hero Banner -->
     <section class="community-hero">
-           
+
       <div class="hero-content">
         <h1>Cộng đồng Waste Less</h1>
         <p class="subtitle">Cùng nhau thay đổi vì một Việt Nam xanh sạch đẹp</p>
@@ -99,107 +101,112 @@
       </section>
 
       <!-- Featured Posts -->
-    <section class="featured-posts container-fluid">
-  <h2 class="section-title"><i class="fas fa-star"></i> Bài viết nổi bật</h2>
-  <div class="posts-grid">
-    <!-- Post 1 -->
-    <article class="post-card featured">
-      <div class="post-header">
-        <img src="../assets/images/av1.jpg" alt="Minh Anh" class="user-avatar">
-        <div class="user-info">
-          <h4>Lan Anh</h4>
-          <span class="post-date">3 ngày trước</span>
-        </div>
-        <span class="featured-badge"><i class="fas fa-star"></i> Nổi bật</span>
-      </div>
-      <div class="post-content">
-        <h3>Cách làm phân compost tại nhà cực dễ</h3>
-        <p>Chỉ với thùng xốp và rác hữu cơ nhà bếp, mình đã tạo ra phân bón chất lượng cho khu vườn nhỏ. Bài viết hướng dẫn chi tiết từ A-Z...</p>
-        <img src="../assets/images/phân compost.jpg" alt="Phân compost" class="post-image">
-      </div>
-      <div class="post-footer">
-        <div class="reaction-count">
-          <span><i class="fas fa-heart"></i> 142</span>
-          <span><i class="fas fa-comment"></i> 28</span>
-        </div>
-        <a href="#" class="read-more">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </article>
+      <section class="featured-posts container-fluid">
+        <h2 class="section-title"><i class="fas fa-star"></i> Bài viết nổi bật</h2>
+        <div class="posts-grid">
+          <!-- Post 1 -->
+          <article class="post-card featured">
+            <div class="post-header">
+              <img src="../assets/images/av1.jpg" alt="Minh Anh" class="user-avatar">
+              <div class="user-info">
+                <h4>Lan Anh</h4>
+                <span class="post-date">3 ngày trước</span>
+              </div>
+              <span class="featured-badge"><i class="fas fa-star"></i> Nổi bật</span>
+            </div>
+            <div class="post-content">
+              <h3>Cách làm phân compost tại nhà cực dễ</h3>
+              <p>Chỉ với thùng xốp và rác hữu cơ nhà bếp, mình đã tạo ra phân bón chất lượng cho khu vườn nhỏ. Bài viết
+                hướng dẫn chi tiết từ A-Z...</p>
+              <img src="../assets/images/phân compost.jpg" alt="Phân compost" class="post-image">
+            </div>
+            <div class="post-footer">
+              <div class="reaction-count">
+                <span><i class="fas fa-heart"></i> 142</span>
+                <span><i class="fas fa-comment"></i> 28</span>
+              </div>
+              <a href="#" class="read-more">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
 
-    <!-- Post 2 -->
-    <article class="post-card">
-      <div class="post-header">
-        <img src="../assets/images/av2.jfif" alt="Hoàng Nam" class="user-avatar">
-        <div class="user-info">
-          <h4>Yến Nhy</h4>
-          <span class="post-date">1 tuần trước</span>
-        </div>
-      </div>
-      <div class="post-content">
-        <h3>Hướng dẫn làm đồ chơi từ lõi giấy vệ sinh</h3>
-        <p>Biến lõi nhựa thành những món đồ chơi sáng tạo cho trẻ em, vừa tiết kiệm vừa bảo vệ môi trường. Có cả template để tải về...</p>
-        <img src="../assets/images/tai-che-chai-nhua-thanh-do-choi-1-6848.jpg" alt="Đồ chơi tái chế" class="post-image">
-      </div>
-      <div class="post-footer">
-        <div class="reaction-count">
-          <span><i class="fas fa-heart"></i> 89</span>
-          <span><i class="fas fa-comment"></i> 15</span>
-        </div>
-        <a href="#" class="read-more">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </article>
+          <!-- Post 2 -->
+          <article class="post-card">
+            <div class="post-header">
+              <img src="../assets/images/av2.jfif" alt="Hoàng Nam" class="user-avatar">
+              <div class="user-info">
+                <h4>Yến Nhy</h4>
+                <span class="post-date">1 tuần trước</span>
+              </div>
+            </div>
+            <div class="post-content">
+              <h3>Hướng dẫn làm đồ chơi từ lõi giấy vệ sinh</h3>
+              <p>Biến lõi nhựa thành những món đồ chơi sáng tạo cho trẻ em, vừa tiết kiệm vừa bảo vệ môi trường. Có cả
+                template để tải về...</p>
+              <img src="../assets/images/tai-che-chai-nhua-thanh-do-choi-1-6848.jpg" alt="Đồ chơi tái chế"
+                class="post-image">
+            </div>
+            <div class="post-footer">
+              <div class="reaction-count">
+                <span><i class="fas fa-heart"></i> 89</span>
+                <span><i class="fas fa-comment"></i> 15</span>
+              </div>
+              <a href="#" class="read-more">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
 
-    <!-- Post 3 -->
-    <article class="post-card">
-      <div class="post-header">
-        <img src="../assets/images/av3.jfif" alt="Linh Chi" class="user-avatar">
-        <div class="user-info">
-          <h4>Linh Chi</h4>
-          <span class="post-date">2 tuần trước</span>
-        </div>
-      </div>
-      <div class="post-content">
-        <h3>Trải nghiệm 30 ngày sống không rác thải nhựa</h3>
-        <p>Hành trình của tôi khi thử thách bản thân không sử dụng đồ nhựa dùng một lần trong 1 tháng. Những khó khăn và bài học quý giá...</p>
-        <img src="../assets/images/trainghiem.jpg" alt="Sống không nhựa" class="post-image">
-      </div>
-      <div class="post-footer">
-        <div class="reaction-count">
-          <span><i class="fas fa-heart"></i> 210</span>
-          <span><i class="fas fa-comment"></i> 42</span>
-        </div>
-        <a href="#" class="read-more">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </article>
+          <!-- Post 3 -->
+          <article class="post-card">
+            <div class="post-header">
+              <img src="../assets/images/av3.jfif" alt="Linh Chi" class="user-avatar">
+              <div class="user-info">
+                <h4>Linh Chi</h4>
+                <span class="post-date">2 tuần trước</span>
+              </div>
+            </div>
+            <div class="post-content">
+              <h3>Trải nghiệm 30 ngày sống không rác thải nhựa</h3>
+              <p>Hành trình của tôi khi thử thách bản thân không sử dụng đồ nhựa dùng một lần trong 1 tháng. Những khó
+                khăn và bài học quý giá...</p>
+              <img src="../assets/images/trainghiem.jpg" alt="Sống không nhựa" class="post-image">
+            </div>
+            <div class="post-footer">
+              <div class="reaction-count">
+                <span><i class="fas fa-heart"></i> 210</span>
+                <span><i class="fas fa-comment"></i> 42</span>
+              </div>
+              <a href="#" class="read-more">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
 
-    <!-- Post 4 -->
-    <article class="post-card">
-      <div class="post-header">
-        <img src="../assets/images/av4.jfif" alt="Tuấn Anh" class="user-avatar">
-        <div class="user-info">
-          <h4>Mai Trinh</h4>
-          <span class="post-date">3 tuần trước</span>
-        </div>
-      </div>
-      <div class="post-content">
-        <h3>Thiết kế vườn rau mini trên ban công 5m²</h3>
-        <p>Chia sẻ cách tôi thiết kế khu vườn nhỏ xinh cung cấp rau sạch quanh năm cho gia đình, kể cả khi sống trong chung cư...</p>
-        <img src="../assets/images/thietkevuonrau.jpg" alt="Vườn ban công" class="post-image">
-      </div>
-      <div class="post-footer">
-        <div class="reaction-count">
-          <span><i class="fas fa-heart"></i> 156</span>
-          <span><i class="fas fa-comment"></i> 31</span>
-        </div>
-        <a href="#" class="read-more">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </article>
+          <!-- Post 4 -->
+          <article class="post-card">
+            <div class="post-header">
+              <img src="../assets/images/av4.jfif" alt="Tuấn Anh" class="user-avatar">
+              <div class="user-info">
+                <h4>Mai Trinh</h4>
+                <span class="post-date">3 tuần trước</span>
+              </div>
+            </div>
+            <div class="post-content">
+              <h3>Thiết kế vườn rau mini trên ban công 5m²</h3>
+              <p>Chia sẻ cách tôi thiết kế khu vườn nhỏ xinh cung cấp rau sạch quanh năm cho gia đình, kể cả khi sống
+                trong chung cư...</p>
+              <img src="../assets/images/thietkevuonrau.jpg" alt="Vườn ban công" class="post-image">
+            </div>
+            <div class="post-footer">
+              <div class="reaction-count">
+                <span><i class="fas fa-heart"></i> 156</span>
+                <span><i class="fas fa-comment"></i> 31</span>
+              </div>
+              <a href="#" class="read-more">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
 
-   
-  <div class="view-all-container">
-    <a href="#" class="view-all-btn">Xem tất cả bài viết <i class="fas fa-arrow-right"></i></a>
-  </div>
-</section>
+
+          <div class="view-all-container">
+            <a href="#" class="view-all-btn">Xem tất cả bài viết <i class="fas fa-arrow-right"></i></a>
+          </div>
+      </section>
       <!-- Discussion Topics -->
       <section class="discussion-topics container-fluid">
         <h2 class="section-title"><i class="fas fa-comments"></i> Thảo luận mới</h2>
@@ -220,7 +227,8 @@
               </div>
             </div>
             <div class="topic-content">
-              <p>Mình đang có nhiều pin cũ không dùng, không biết ở Hà Nội có điểm thu gom pin cũ nào không? Mọi người chia sẻ giúp mình với ạ!</p>
+              <p>Mình đang có nhiều pin cũ không dùng, không biết ở Hà Nội có điểm thu gom pin cũ nào không? Mọi người
+                chia sẻ giúp mình với ạ!</p>
             </div>
             <div class="topic-tags">
               <span class="tag">#thugom</span>
@@ -245,7 +253,8 @@
               </div>
             </div>
             <div class="topic-content">
-              <p>Chia sẻ kinh nghiệm của mình về cách mua sắm giảm thiểu rác thải nhựa: mang theo túi vải, hộp đựng, mua số lượng lớn...</p>
+              <p>Chia sẻ kinh nghiệm của mình về cách mua sắm giảm thiểu rác thải nhựa: mang theo túi vải, hộp đựng, mua
+                số lượng lớn...</p>
             </div>
             <div class="topic-tags">
               <span class="tag">#songxanh</span>
@@ -294,7 +303,7 @@
             </div>
           </article>
 
-           <article class="event-card">
+          <article class="event-card">
             <div class="event-date">
               <span class="day">26</span>
               <span class="month">TH6</span>
@@ -310,7 +319,7 @@
             </div>
           </article>
 
-           <article class="event-card">
+          <article class="event-card">
             <div class="event-date">
               <span class="day">22</span>
               <span class="month">TH6</span>
@@ -318,7 +327,8 @@
             <div class="event-content">
               <h3>Hội thảo "Nông nghiệp đô thị"</h3>
               <p class="event-location"><i class="fas fa-map-marker-alt"></i>Trường Đại học Nông Lâm, Hà Nội</p>
-              <p class="event-description">>Chia sẻ kinh nghiệm trồng rau sạch tại nhà và giải pháp nông nghiệp đô thị bền vững.</p>
+              <p class="event-description">>Chia sẻ kinh nghiệm trồng rau sạch tại nhà và giải pháp nông nghiệp đô thị
+                bền vững.</p>
               <div class="event-meta">
                 <span><i class="fas fa-users"></i> 89 người tham gia</span>
                 <a href="#" class="register-btn">Đăng ký</a>
@@ -366,7 +376,8 @@
       <section class="community-cta container-fluid">
         <div class="cta-content">
           <h3>Bạn cũng có thể tạo sự khác biệt!</h3>
-          <p>Tham gia cộng đồng WasteLess ngay hôm nay để cùng chia sẻ kiến thức, kinh nghiệm và lan tỏa lối sống xanh.</p>
+          <p>Tham gia cộng đồng WasteLess ngay hôm nay để cùng chia sẻ kiến thức, kinh nghiệm và lan tỏa lối sống xanh.
+          </p>
           <div class="cta-buttons">
             <a href="#" class="cta-btn primary"><i class="fas fa-pen-fancy"></i> Viết bài chia sẻ</a>
             <a href="#" class="cta-btn secondary"><i class="fas fa-user-plus"></i> Đăng ký thành viên</a>
@@ -377,57 +388,34 @@
   </main>
 
   <footer class="footer"></footer>
- 
-  <iframe id="chatbotIframe" src="botChat.html" 
-          style="position: fixed; bottom: 0; right: 0; width: 180px; height: 180px; border: none; z-index: 1000;">
-  </iframe>
- <script>
-    const iframe = document.getElementById('chatbotIframe');
+  <div class="chatbot"></div>
 
+  
 
-
-
-window.addEventListener('message', (event) => {
-  if (event.data.action === 'chatbotVisible') {
-    if (event.data.visible) {
-      iframe.style.width = '420px';
-      iframe.style.height = '570px';
-      iframe.style.pointerEvents = 'auto';
-    } else {
-      iframe.style.width = '60px';
-      iframe.style.height = '60px';
-      iframe.style.pointerEvents = 'auto';
-    }
-  }
-});
-
-
-  window.addEventListener('click', (e) => {
-    const rect = iframe.getBoundingClientRect();
-    const isOutside = e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom;
-    if (isOutside) {
-      iframe.contentWindow.postMessage({ action: 'closeChatbot' }, '*');
-    }
-  });
-</script>
-
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 
-      <script>
+  <script>
     fetch('../layout/login.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('auth-form-container').innerHTML = data;
         const script = document.createElement('script');
-        script.src = '../assets/js/index.js';
+        script.src = '../assets/js/form.js';
         document.body.appendChild(script);
       });
   </script>
+  <script src="../layout/header.js" > </script>
+
+  <script src="../layout/chatbot.js"></script>
+  <script src="../layout/footer.js" ></script>
+
 
 </body>
+
 </html>

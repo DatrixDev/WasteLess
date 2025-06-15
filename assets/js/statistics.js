@@ -325,24 +325,10 @@ function applyFilters() {
         (!selectedStatus || p.status === selectedStatus)
     );
     renderProjects(filtered);
-    renderSlide(filtered);
+    
 }
 
-function renderSlide(filteredProjects) {
-    const slideContainer = document.getElementById('projectSlide');
-    slideContainer.innerHTML = '';
-    filteredProjects.forEach(p => {
-        const el = document.createElement('div');
-        el.className = 'project-slide-item';
-        el.innerHTML = `
-            <img src="${p.image}" alt="${p.name}">
-            <h4>${p.name}</h4>
-            <p>${p.province} - ${p.status}</p>
-        `;
-        el.addEventListener('click', () => showPopup(p));
-        slideContainer.appendChild(el);
-    });
-}
+
 
 // Add event listeners for filters
 document.getElementById('filterProvince').addEventListener('change', applyFilters);

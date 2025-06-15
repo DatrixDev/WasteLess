@@ -1,14 +1,14 @@
 :root {
-  --primary-color: #28a745; /* Màu xanh lá cây chính */
-  --secondary-color: #007bff; /* Màu xanh dương phụ */
-  --text-color: #333333; /* Màu chữ chính */
-  --background-light: #f8f9fa; /* Màu nền sáng */
+  --primary-color: #28a745; 
+  --secondary-color: #007bff; 
+  --text-color: #333333; 
+  --background-light: #f8f9fa;
   --white: #ffffff;
-  --danger-color: #dc3545; /* Màu đỏ cho cảnh báo */
-  --brown-color: #8B4513; /* Màu nâu cho rác hữu cơ */
-  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
-  --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.15); /* Bóng đổ trung bình */
-  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh */
+  --danger-color: #dc3545;
+  --brown-color: #8B4513;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.2); 
 }
 
 /* Hero Section */

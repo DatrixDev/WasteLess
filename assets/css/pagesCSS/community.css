@@ -56,11 +56,14 @@ img {
 
 /* ===== COMMUNITY HERO ===== */
 .community-hero {
-  background: linear-gradient(rgba(112, 146, 97, 0.6), rgba(54, 53, 53, 0.6)), 
-              url('../assets/images/community-bg.jpg') center/cover no-repeat;
+  background-image: url('../../images/pexels-ron-lach-7944397.jpg');
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   color: white;
   padding: 120px 0 80px;
   text-align: center;
+  height: 90vh;
   margin-bottom: 40px;
 }
 
@@ -714,4 +717,56 @@ img {
     font-size: 0.9rem;
   }
 }
+
+.community-hero {
+  background-image: url('../../images/pexels-ron-lach-7944397.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 20px 80px; /* Padding ngang co giãn */
+  text-align: center;
+  height: 90vh;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Responsive tablet */
+@media (max-width: 992px) {
+  .community-hero {
+    padding: 100px 15px 60px;
+    height: auto; /* Chiều cao co lại nếu nội dung nhiều */
+  }
+
+  .community-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .community-hero p {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+}
+
+/* ✅ Responsive mobile */
+@media (max-width: 576px) {
+  .community-hero {
+    padding: 80px 10px 50px;
+    height: auto;
+  }
+
+  .community-hero h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .community-hero p {
+    font-size: 1rem;
+  }
+}
+
  

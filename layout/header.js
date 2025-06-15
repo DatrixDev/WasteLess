@@ -8,7 +8,7 @@ const navLinks = [
   { href: prefix + "index.html", label: "Trang chủ", match: "/index.html" },
   { href: prefix + "pages/statistics.html", label: "Thống kê", match: "/pages/statistics.html" },
   { href: prefix + "pages/community.html", label: "Cộng đồng", match: "/pages/community.html" },
-  { href: prefix + "pages/contact.html", label: "Xếp hạng", match: "/pages/contact.html" },
+  { href: prefix + "pages/ranking.html", label: "Xếp hạng", match: "/pages/ranking.html" },
   { href: prefix + "pages/news.html", label: "Hợp tác", match: "/pages/news.html" },
   { href: prefix + "pages/guidance.html", label: "Hướng dẫn", match: "/pages/guidance.html" }
 ];
@@ -103,7 +103,8 @@ header.innerHTML = `
           <div class="left">
 
                 <div class="inner-search">
-                     <i class="fas fa-search search-icon"></i>
+                    <i class="fas fa-search search-icon" id="search"></i>
+
                      <input type="text" id="search-input" class="form-control search-input" placeholder="Tìm kiếm...">
                 </div>
           
@@ -135,10 +136,10 @@ header.innerHTML = `
 </div>
 </div>
 
-
+<div class=scroll> 
 <div class="scroll-top">
 <i class="fas fa-arrow-up"></i>
-</div>
+</div></div>
 `;
 
 AOS.init();
@@ -197,14 +198,14 @@ var scrollTop = () => {
     header.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
-var scrollBtn = $(".scroll-top");
+var scrollBtn = $(".scroll");
 scrollBtn.addEventListener("click", scrollTop);
 window.addEventListener("scroll", scrollBtnDisplay);
 
 function scrollBtnDisplay() {
     if (
         document.body.scrollTop > 200 ||
-        document.documentElement.scrollTop > 200
+        document.documentElement.scrollTop > 400
     ) {
         scrollBtn.style.display = "block";
     } else {
@@ -241,7 +242,7 @@ var topBar = $(".header__topbar");
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         headerSticky.classList.add("scroll");
         topBar.classList.add("hide");
     } else {
@@ -252,7 +253,8 @@ function scrollFunction() {
 
 // Search Button
 var searchIcon = $("#search");
-var input = $(".header__nav__container--search input");
+var input = $(".search-input");
+
 
 searchIcon.onclick = function() {
     input.classList.toggle("active");
@@ -277,19 +279,3 @@ tabs.forEach((tab) => {
     };
 });
 
-// Header menu modal
-
-var box = $(".header__menu__overlay");
-var boxBody = $(".header__menu__body--content");
-var open = $("#menu_open");
-var close = $("#menu_close");
-
-open.onclick = function() {
-    box.style.display = "block";
-    boxBody.classList.add("open");
-};
-
-close.onclick = function() {
-    box.style.display = "none";
-    boxBody.classList.remove("open");
-};

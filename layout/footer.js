@@ -3,7 +3,7 @@ let homeLink = prefix + "index.html";
 let guidanceLink = prefix + "pages/guidance.html";
 let statisticsLink = prefix + "pages/statistics.html";
 let communityLink = prefix + "pages/community.html";
-let contactLink = prefix + "pages/contact.html";
+let ranking = prefix + "pages/ranking.html";
 let newsLink = prefix + "pages/news.html";
 
 footer.innerHTML = `
@@ -47,7 +47,7 @@ footer.innerHTML = `
 </li>
 <li>
 <li>
-  <a href="${newsLink}" target="_self">
+  <a href="${ranking}" target="_self">
     Xếp hạng
   </a>
 </li>
@@ -58,6 +58,7 @@ footer.innerHTML = `
 </li>
 
 
+<li>
 
   <a href="${guidanceLink}" target="_self">
     Hướng dẫn
