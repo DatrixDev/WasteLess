@@ -15,6 +15,7 @@
 }
 .inner-main {
   transition: padding 0.3s ease;
+
 }
 
 .header__nav.scroll .inner-main {
@@ -538,6 +539,10 @@ border-radius: 50%;
         padding-right: 10px !important;
         padding-left: 10px !important;
     }
+    .header__nav.scroll .inner-main {
+  padding: 12px 20px 12px 20px !important; 
+}
+
     .container-register{
         align-items: center;
         display: flex;
@@ -614,9 +619,7 @@ border-radius: 50%;
   .container-register {
       padding-right: 2px !important;
   }
-    .inner-main {
-        padding: 10px 15px;
-    }
+
     
     .inner-logo span {
         font-size: 18px;
@@ -651,11 +654,7 @@ border-radius: 50%;
         gap: 6px;
     }
     
-    .header__nav .inner-main {
- padding: 8px 15px !important;
-
-
-    }
+  
     .header__menu {
         width: 270px;
         
@@ -706,6 +705,14 @@ border-radius: 50%;
     .header__menu__body--content ul li a {
         font-size: 16px;
     }
+    .inner-main {
+          padding: 17px 20px 17px 20px !important; 
+
+    }
+      .header__nav.scroll .inner-main {
+  padding: 10px 20px 10px 20px !important; 
+}
+
 }
 
 /* Extra small devices (less than 360px) */
