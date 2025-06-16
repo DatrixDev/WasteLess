@@ -425,8 +425,8 @@ body {
     margin-bottom: 0;
 }
 .popup-close {
-    top: 12px;
-    right: 18px;
+    top: 0px;
+    right: 12px;
     font-size: 1.5rem;
 }
 
