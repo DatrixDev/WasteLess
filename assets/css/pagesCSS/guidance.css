@@ -1,28 +1,33 @@
 :root {
-  --primary-color: #28a745; 
-  --secondary-color: #007bff; 
-  --text-color: #333333; 
+  --primary-color: #28a745;
+  --secondary-color: #007bff;
+  --text-color: #333333;
   --background-light: #f8f9fa;
   --white: #ffffff;
   --danger-color: #dc3545;
-  --brown-color: #8B4513;
-  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  --brown-color: #8b4513;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.2); 
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* Hero Section */
 .guide-hero {
-  background: url('../../images/anh1.avif') no-repeat center center;
+  background: url("../../images/anh1.avif") no-repeat center center;
   background-size: cover;
   color: var(--white);
   padding: 100px 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
-}
 
+  width: 100vw; 
+  height: 100vh; 
+  padding: 0; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
 
 .guide-hero .container {
   position: relative;
@@ -30,7 +35,7 @@
 }
 
 .guide-hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 20px;
@@ -38,13 +43,13 @@
 }
 
 .guide-hero .lead {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
 
 .guide-hero .btn {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   padding: 12px 24px;
   border-radius: 50px;
@@ -69,7 +74,7 @@
   background-color: var(--background-light);
   border-radius: 8px;
   padding: 12px 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   border: 2px solid #ddd;
 }
 
@@ -89,7 +94,7 @@
 }
 
 .guide-categories h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.8rem;
   color: var(--text-color);
   margin-bottom: 40px;
@@ -102,19 +107,20 @@
   color: var(--text-color);
   border-radius: 12px;
   padding: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
   font-size: 1.1rem;
 }
 
 /* Trash Bin Table */
 .trash-bin-table .table {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   border-radius: 12px;
   box-shadow: var(--shadow-sm);
 }
 
-.trash-bin-table .table th, .trash-bin-table .table td {
+.trash-bin-table .table th,
+.trash-bin-table .table td {
   vertical-align: middle;
   text-align: center;
   padding: 16px;
@@ -138,7 +144,7 @@
   border: 1px solid #ddd;
   padding: 14px 30px;
   border-radius: 50px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   color: var(--text-color);
   cursor: pointer;
@@ -170,7 +176,7 @@
 }
 
 .category-content h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.2rem;
   margin-bottom: 20px;
   font-weight: 600;
@@ -182,7 +188,7 @@
 }
 
 .item-list li {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   margin-bottom: 12px;
   display: flex;
@@ -227,7 +233,7 @@
 }
 
 .symbol-card div {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -250,13 +256,13 @@
 }
 
 .card-header {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 }
 
 .card-body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .step-list {
@@ -278,14 +284,15 @@
 }
 
 .reward-system h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.8rem;
   color: var(--text-color);
   margin-bottom: 40px;
   font-weight: 600;
 }
 
-.step-card, .reward-card {
+.step-card,
+.reward-card {
   background: var(--white);
   border-radius: 15px;
   padding: 24px;
@@ -293,25 +300,29 @@
   transition: transform 0.3s ease;
 }
 
-.step-card:hover, .reward-card:hover {
+.step-card:hover,
+.reward-card:hover {
   transform: translateY(-5px);
 }
 
-.step-card i, .reward-card i {
+.step-card i,
+.reward-card i {
   color: var(--primary-color);
 }
 
-.step-card h4, .reward-card h5 {
-  font-family: 'Noto Sans', sans-serif;
+.step-card h4,
+.reward-card h5 {
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .points-table .table {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.points-table .table th, .points-table .table td {
+.points-table .table th,
+.points-table .table td {
   vertical-align: middle;
   text-align: center;
   padding: 12px;
@@ -321,7 +332,7 @@
 .achievements .progress {
   height: 30px;
   border-radius: 20px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -362,7 +373,7 @@
 }
 
 .tip-header {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: var(--white);
   padding: 20px;
   display: flex;
@@ -384,7 +395,7 @@
 }
 
 .tip-body li {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   margin-bottom: 14px;
   display: flex;
@@ -393,8 +404,8 @@
 }
 
 .tip-body li::before {
-  content: '\f058';
-  font-family: 'Font Awesome 6 Free';
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   color: var(--primary-color);
 }
@@ -405,7 +416,7 @@
 }
 
 .faq-section h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.8rem;
   color: var(--text-color);
   margin-bottom: 40px;
@@ -423,7 +434,7 @@
 }
 
 .accordion .btn-link {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   color: var(--text-color);
   text-decoration: none;
@@ -454,7 +465,7 @@
 }
 
 .quiz-question p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   margin-bottom: 24px;
 }
@@ -467,7 +478,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   background: var(--background-light);
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -511,13 +522,13 @@
 }
 
 .download-card h5 {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 14px;
 }
 
 .download-card p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   margin-bottom: 18px;
 }
@@ -532,14 +543,14 @@
 }
 
 .cta-section h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2.8rem;
   margin-bottom: 40px;
   font-weight: 600;
 }
 
 .cta-section .btn {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   padding: 14px 28px;
   border-radius: 50px;
@@ -575,7 +586,8 @@
     flex: 1 1 45%;
   }
 
-  .step-card, .reward-card {
+  .step-card,
+  .reward-card {
     margin-bottom: 20px;
   }
 
@@ -605,5 +617,58 @@
 
 /* AOS Animation */
 [data-aos] {
-  transition-duration: 0.6s;
+  transition-duration: 0.8s;
+}
+/* Cải tiến phần FAQ */
+.faq-section .card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.faq-section .card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-section .card-header {
+  background-color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.faq-section .card-header:hover {
+  background-color: #f1f1f1;
+}
+
+.faq-section .btn-link {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+}
+
+.faq-section .btn-link::before {
+  content: "\f078"; /* Font Awesome icon chevron down */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.faq-section .btn-link[aria-expanded="true"]::before {
+  transform: rotate(180deg);
+}
+
+.faq-section .collapse.show {
+  background-color: #e7f5ed; /* nền xanh lá nhạt */
+  border-top: 1px solid #c3e6cb;
+  padding: 15px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
 }
