@@ -205,7 +205,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
   gsap.from(section, {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",
+      start: "top bottom",
       toggleActions: "play none none none",
         once: true
     },
@@ -219,7 +219,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
   gsap.from(".iamge1", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",
+      start: "top bottom",
       once: true
     },
     y: 50,
@@ -232,7 +232,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
   gsap.from(".iamge2", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",
+      start: "top bottom",
       once: true
     },
     y: 100,
@@ -245,7 +245,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
   gsap.from(".iamge3", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",
+      start: "top bottom",
       once: true
     },
     y: 100,
@@ -260,7 +260,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
     gsap.from(p, {
       scrollTrigger: {
         trigger: p,
-        start: "top 95%",
+        start: "top bottom",
         once: true
       },
       y: 30,
@@ -275,7 +275,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
   gsap.from(".section-four .btn-xemthem", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",
+      start: "top bottom",
       once: true
     },
     y: 30,
@@ -291,7 +291,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
   gsap.from(section, {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",
+      start: "top bottom",
       toggleActions: "play none none none",
       once: true
     },
@@ -305,7 +305,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
   gsap.from(".anh1", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",once: true
+      start: "top bottom",once: true
     },
     y: 100,
     opacity: 0,
@@ -317,7 +317,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
   gsap.from(".anh2", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",once: true
+      start: "top bottom",once: true
     },
     y: 100,
     opacity: 0,
@@ -329,7 +329,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
   gsap.from(".anh3", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",once: true
+      start: "top bottom",once: true
     },
     y: 100,
     opacity: 0,
@@ -342,7 +342,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
   gsap.from(".noidung h2", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",once: true
+      start: "top bottom",once: true
     },
     y: 30,
     opacity: 0,
@@ -357,7 +357,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     gsap.from(item, {
       scrollTrigger: {
         trigger: item,
-        start: "top 95%",once: true
+        start: "top bottom",once: true
       },
       y: 30,
       opacity: 0,
@@ -374,7 +374,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
   gsap.from(".section-eight .btn-xemthem", {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%",once: true
+      start: "top bottom",once: true
     },
     y: 30,
     opacity: 0,
@@ -388,7 +388,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     gsap.from(line, {
       scrollTrigger: {
         trigger: line,
-        start: "top 95%",once: true
+        start: "top bottom",once: true
       },
       scaleX: 0,
       duration: 0.8,
