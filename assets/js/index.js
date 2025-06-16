@@ -219,10 +219,10 @@ gsap.utils.toArray(".section-four").forEach(section => {
       trigger: section,
       start: "top 70%",
     },
-    y: 100,
+    y: 50,
     opacity: 0,
     duration: 0.8,
-    delay: 0.2,
+    delay: 0.3,
     ease: "back.out(1.7)"
   });
 
@@ -259,8 +259,8 @@ gsap.utils.toArray(".section-four").forEach(section => {
       },
       y: 30,
       opacity: 0,
-      duration: 0.8,
-      delay: i * 0.1,
+      duration: 0.2,
+      delay: i * 0.08,
       ease: "power2.out"
     });
   });
@@ -273,7 +273,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
     },
     y: 30,
     opacity: 0,
-    duration: 0.8,
+    duration: 0.2,
     delay: 1,
     ease: "power2.out"
   });
@@ -289,7 +289,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     },
     y: 50,
     opacity: 0,
-    duration: 0.7,
+    duration: 0.2,
     ease: "power2.out"
   });
 
@@ -301,7 +301,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     },
     y: 100,
     opacity: 0,
-    duration: 0.8,
+    duration: 0.2,
     delay: 0.2,
     ease: "power2.out"
   });
@@ -313,7 +313,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     },
     y: 100,
     opacity: 0,
-    duration: 0.8,
+    duration: 0.2,
     delay: 0.4,
     ease: "power2.out"
   });
@@ -325,7 +325,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     },
     y: 100,
     opacity: 0,
-    duration: 0.8,
+    duration: 0.2,
     delay: 0.6,
     ease: "power2.out"
   });
@@ -338,7 +338,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     },
     y: 30,
     opacity: 0,
-    duration: 0.6,
+    duration: 0.3,
     delay: 0.3,
     ease: "power2.out"
   });
@@ -353,8 +353,8 @@ gsap.utils.toArray(".section-eight").forEach(section => {
       },
       y: 30,
       opacity: 0,
-      duration: 1.2,
-      delay: index * 0.05,
+      duration: 0.2,
+      delay: index * 0.02,
       ease: "power2.out",
       onStart: () => {
         item.classList.add('active-text');
@@ -370,7 +370,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     },
     y: 30,
     opacity: 0,
-    duration: 1.2,
+    duration: 0.2,
     delay: solutions.length * 0.05 + 0.1,
     ease: "power2.out"
   });
