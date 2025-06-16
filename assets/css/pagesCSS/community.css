@@ -16,7 +16,14 @@
   --radius-md: 10px;
   --radius-lg: 16px;
 }
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
 
 * {
   margin: 0;
@@ -66,7 +73,13 @@ img {
   height: 90vh;
   margin-bottom: 40px;
 }
-
+  .community-events .register-btn{
+  
+    text-decoration: none;
+  }
+   .community-events .register-btn:hover{
+    background-color: #95d01f;
+   }
 .community-hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
@@ -767,6 +780,14 @@ img {
   .community-hero p {
     font-size: 1rem;
   }
+  .community-events .register-btn{
+    padding: 6px 4px 6px 4px ;
+    font-size: 13px;
+    text-decoration: none;
+  }
+   .community-events .register-btn:hover{
+    background-color: #95d01f;
+   }
 }
 
  

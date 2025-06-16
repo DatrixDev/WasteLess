@@ -13,7 +13,7 @@
     transform: scale(1.2);
 }
 
-/* Rest of the previous CSS remains unchanged */
+
 * {
     margin: 0;
     padding: 0;
@@ -84,7 +84,7 @@ body {
 }
 
 .inner-title .subTitle h2  {
-    color: #1cbc41;
+    color: #0d6120;
     font-weight: 700;
 }
 
@@ -382,7 +382,7 @@ body {
     }
 
     .inner-title .subTitle h2 {
-        font-size: 1.8rem;
+        font-size: 35px;
     }
 
     .inner-title .button {

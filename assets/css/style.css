@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
 /* SECTION-ONE */
 
 .section-one {
@@ -922,6 +930,10 @@ i.regit {
   transform: translateY(-3px);
   box-shadow: 3px 12px 11px rgba(0, 0, 0, 0.65);
 }
+.tinhNang{
+  display: flex;
+  flex-direction: row;
+}
 
 
 
@@ -989,6 +1001,10 @@ i.regit {
 .section-eight {
   background-color: rgb(235, 236, 237) !important;
   width: 100%;
+
+}
+.section-eight .container{
+    padding-top: 20px !important;
 }
 
 .section-eight .text-yellow {
@@ -1011,7 +1027,10 @@ i.regit {
 
 /* Image container styles */
 .section-eight .image {
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+.section-eight h2{
+  padding-top: 0px !important;
 }
 
 .section-eight .image1 {
@@ -1304,6 +1323,12 @@ i.regit {
  .section-one .inner-wrap {
   max-width: 50%;
 }
+
+.section-eight .image{
+   display: flex !important;
+   flex-direction: column !important;
+}
+
 
 .section-one .inner-wrap h1 {
   line-height: 1.3;
@@ -1662,6 +1687,22 @@ i.regit {
 
   .section-nice {
   height: 75vh;
+
+}
+.section-eight .imagetext {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.section-eight .imagetext > * {
+  flex: 1 1 auto;
+}
+
+.section-eight .image{
+  margin: 0;
 
 }
 
@@ -2130,9 +2171,7 @@ width: 40px;
    }
 
 
-     .section-feature .row#feature-list {
-    flex-direction: column;
-  }
+    
 
   .section-feature .inner-list {
     width: 100%;
@@ -2149,8 +2188,17 @@ width: 40px;
   .section-feature .container .inner-list p {
     text-align: center;
   }
-
-
+.noidung{
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: 50%;
+}
+.section-eight .imagetext{
+  gap: 40px !important;
+}
+.section-eight .container{
+  margin: 0;
+}
 
 @media (max-width: 643px) {
   .section-result .inner-wrap .inner-content .inner-img {
@@ -2438,7 +2486,12 @@ width: 40px;
   padding: 7px 15px;
   font-size: 14px;
 }
-
+.section-eight .image{
+  display: none !important;
+}
+.section-eight .container {
+  margin: 0;
+}
 
 }
 

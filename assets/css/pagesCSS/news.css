@@ -464,4 +464,44 @@ input {
   html {
   scroll-behavior: smooth;
 }
+  @media (max-width: 400px) {
+    .section-one {
+      padding-bottom: 30px;
+    }
+    .section-two{
+padding-top: 10px;
+    }
+  .section-two .inner-text{
+padding-left: 0px !important;
+padding-right: 0px !important;
+
+    }
+    .section-two .inner-text h1{
+      text-align: left;
+      font-size: 38px;
+
+    }
+    .section-two .inner-wrap{
+      
+    }
+      .section-two .container{
+        padding-left: 22px !important;
+padding-right: 22px !important;
+      }
+      .section-three{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .section-three .container{
+        padding: 0;
+      }
+      .section-three .inner-join{
+        margin-top: 30px;
+      }
+      .section-four .inner-text h2{
+        text-align: justify !important;
+        font-size: 36px;
+
+      }
+  }
   

@@ -11,6 +11,14 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f8f9fa;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
 
 /* Hero Section */
 
@@ -466,16 +474,63 @@ body {
 }
 
 /* Smallest devices (phones, 360px and down) */
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .leaderboard-table thead th:nth-child(3),
   .leaderboard-table tbody td:nth-child(3) {
     display: none;
   }
-  
+  .challenge-hero .button1{
+    font-size: 17px !important;
+    padding: 5px !important;
+    min-width: 100px !important;
+    border: none !important;
+    border-radius: 10px;
+  }
+  .challenge-hero .button2{
+    font-size: 17px !important;
+    padding: 5px !important;
+    min-width: 100px !important;
+    border: none !important;
+    border-radius: 10px;
+  }
   .rank-badge {
     width: 26px;
     height: 26px;
     line-height: 26px;
     font-size: 0.8rem;
   }
+  .section-two .rounded-circle{
+    font-size: 2px !important;
+    width: 60px;
+    height: 60px;
+    right: 100px;
+
+
+
+  }
+  .user-avatar{
+    border: 0px;
+    margin-left: 250px;
+  }
+  .rank-badge{
+    right: 20px;
+    bottom: 10px;
+  }
+    .section-two .row{
+      margin-bottom: 20px !important;
+    }
+    .card-body{
+      padding: 0;
+    }
+    .challenge-card{
+      padding: 30px 10px 0px 10px;
+      border: 40px;
+      padding-bottom: 20px;
+    }
+    .challengee-card{
+       padding: 0px;
+    }
+    .submit3{
+      padding: 8px 20px 8px 20px !important;
+    }
 }
