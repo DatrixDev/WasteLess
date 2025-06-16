@@ -1318,12 +1318,6 @@ i.regit {
   will-change: transform, opacity;
 }
 
-/* Làm mượt hiệu ứng scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-
 
 
 
@@ -1342,7 +1336,7 @@ html {
    flex-direction: column !important;
 }
 .section-eight .container{
-   padding-left: 0px !important;
+   padding-left: 10px !important;
 }
 
 .section-one .inner-wrap h1 {

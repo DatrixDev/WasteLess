@@ -206,7 +206,6 @@ gsap.utils.toArray(".section-four").forEach(section => {
     scrollTrigger: {
       trigger: section,
       start: "top bottom",
-      toggleActions: "play none none none",
         once: true
     },
     y: 50,
@@ -226,7 +225,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
     opacity: 0,
     duration: 0.8,
     delay: 0.3,
-    ease: "back.out(1.7)"
+    ease: "power3.out"
   });
 
   gsap.from(".iamge2", {
@@ -239,7 +238,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
     opacity: 0,
     duration: 0.8,
     delay: 0.4,
-    ease: "back.out(1.7)"
+    ease: "power3.out"
   });
 
   gsap.from(".iamge3", {
@@ -252,7 +251,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
     opacity: 0,
     duration: 0.8,
     delay: 0.6,
-    ease: "back.out(1.7)"
+    ease: "power3.out"
   });
 
   // Text đoạn văn
@@ -292,7 +291,6 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     scrollTrigger: {
       trigger: section,
       start: "top bottom",
-      toggleActions: "play none none none",
       once: true
     },
     y: 50,
@@ -310,7 +308,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     y: 100,
     opacity: 0,
     duration: 0.2,
-    delay: 0.2,
+    delay: 0.1,
     ease: "power2.out"
   });
 
@@ -322,7 +320,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     y: 100,
     opacity: 0,
     duration: 0.2,
-    delay: 0.4,
+    delay: 0.1,
     ease: "power2.out"
   });
 
@@ -334,7 +332,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     y: 100,
     opacity: 0,
     duration: 0.2,
-    delay: 0.6,
+    delay: 0.1,
     ease: "power3.out"
   });
 
@@ -347,7 +345,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     y: 30,
     opacity: 0,
     duration: 0.3,
-    delay: 0.3,
+    delay: 0,
     ease: "power3.out"
   });
 
@@ -362,7 +360,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
       y: 30,
       opacity: 0,
       duration: 0.2,
-      delay:0.02,
+      delay:0,
       ease: "power3.out",
       onStart: () => {
         item.classList.add('active-text');
@@ -392,7 +390,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
       },
       scaleX: 0,
       duration: 0.8,
-      delay: i * 0.05 ,
+      delay:  0 ,
       ease: "power3.out",
       transformOrigin: "left center"
     });
