@@ -401,4 +401,66 @@ body {
     .project-slide-item img {
         height: 100px;
     }
+
+
+
+
+    
+.popup-detail {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 15px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+    width: 70%;
+}
+
+
+.popup-detail img {
+    width: 100%;
+    margin: 15px 0;
+    max-height: 220px;
+}
+#popupName{
+    margin-bottom: 0;
+}
+.popup-close {
+    top: 12px;
+    right: 18px;
+    font-size: 1.5rem;
+}
+
+
+.popup-detail h3 {
+    margin: 0 0 12px;
+    color: #28a745;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.popup-detail p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.popup-detail p strong {
+    font-weight: 500;
+}
+
+
+.popup-buttons button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+
+
+.popup-buttons button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
 }

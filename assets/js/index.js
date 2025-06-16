@@ -104,7 +104,6 @@ document.addEventListener('scroll', function () {
 
 
 //SECTION-TWO
-
 const mainFeature = document.getElementById("main-feature");
 const mainIcon = document.getElementById("main-icon");
 const mainTitle = document.getElementById("main-title");
@@ -115,34 +114,40 @@ featureList.addEventListener("click", function (e) {
   const box = e.target.closest(".feature-box");
   if (!box) return;
 
-  // Lấy phần tử hình ảnh, tiêu đề, mô tả trong box được click
+  // --- Lấy phần tử trong box ---
   const boxImage = box.querySelector("img");
+  const boxIcon = box.dataset.icon;
   const boxTitle = box.dataset.title;
   const boxDesc = box.dataset.desc;
-  const boxIcon = box.dataset.icon;
 
-  // Lưu nội dung hiện tại ở khung chính
+  const boxP = box.querySelector("p");      // Tiêu đề ngắn
+  const boxH3 = box.querySelector("h3");    // Mô tả thu gọn
+
+  // --- Lưu dữ liệu hiện tại từ khung chính ---
   const oldImageHTML = mainIcon.innerHTML;
+  const oldIcon = mainIcon.dataset.icon || "";
   const oldTitle = mainTitle.textContent;
   const oldDesc = mainDesc.textContent;
-  const oldIcon = mainIcon.dataset.icon || "";
 
-  // Thay đổi nội dung khung chính
+  // --- Lưu dữ liệu rút gọn để gán lại vào box ---
+  const shortTitle = mainTitle.textContent;        // Gán vào p
+  const shortDesc = mainDesc.textContent;          // Gán vào h3
+
+  // --- Gán dữ liệu mới lên khung chính ---
   mainIcon.innerHTML = boxImage.outerHTML;
+  mainIcon.dataset.icon = boxIcon;
   mainTitle.textContent = boxTitle;
   mainDesc.textContent = boxDesc;
 
-  // Gán lại dataset-icon để lưu icon cũ
-  mainIcon.dataset.icon = boxIcon;
-
-  // Gán lại box vừa click thành thông tin cũ (ảnh, tiêu đề, mô tả)
+  // --- Gán dữ liệu cũ (rút gọn) trở lại box ---
   box.querySelector("img").outerHTML = oldImageHTML;
-  box.querySelector("p").textContent = oldTitle;
   box.dataset.icon = oldIcon;
   box.dataset.title = oldTitle;
   box.dataset.desc = oldDesc;
-});
 
+  boxP.textContent = oldTitle;  // đổi lại p
+  boxH3.textContent = oldDesc;  // đổi lại h3
+});
 
 
 //END-SECTION-TWO
