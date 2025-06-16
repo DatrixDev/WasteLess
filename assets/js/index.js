@@ -199,25 +199,27 @@ document.querySelectorAll('.item').forEach(item => {
 // HIỆU ỨNG
 gsap.registerPlugin(ScrollTrigger);
 
+
 // Hiệu ứng cho section-four
 gsap.utils.toArray(".section-four").forEach(section => {
   gsap.from(section, {
     scrollTrigger: {
       trigger: section,
-      start: "top 80%",
-      toggleActions: "play none none none"
+      start: "top 90%",
+      toggleActions: "play none none none",
+        once: true
     },
     y: 50,
     opacity: 0,
     duration: 0.8,
-    ease: "power2.out"
+    ease: "power3.out"
   });
 
   // Ảnh trong section-four: đều từ dưới lên
   gsap.from(".iamge1", {
     scrollTrigger: {
       trigger: section,
-      start: "top 70%",
+      start: "top 80%",
     },
     y: 50,
     opacity: 0,
@@ -229,7 +231,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
   gsap.from(".iamge2", {
     scrollTrigger: {
       trigger: section,
-      start: "top 70%",
+      start: "top 80%",
     },
     y: 100,
     opacity: 0,
@@ -241,7 +243,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
   gsap.from(".iamge3", {
     scrollTrigger: {
       trigger: section,
-      start: "top 70%",
+      start: "top 80%",
     },
     y: 100,
     opacity: 0,
@@ -260,8 +262,8 @@ gsap.utils.toArray(".section-four").forEach(section => {
       y: 30,
       opacity: 0,
       duration: 0.2,
-      delay: i * 0.08,
-      ease: "power2.out"
+      delay: 0.08,
+      ease: "power3.out"
     });
   });
 
@@ -275,7 +277,7 @@ gsap.utils.toArray(".section-four").forEach(section => {
     opacity: 0,
     duration: 0.2,
     delay: 1,
-    ease: "power2.out"
+    ease: "power3.out"
   });
 });
 
@@ -290,14 +292,14 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     y: 50,
     opacity: 0,
     duration: 0.2,
-    ease: "power2.out"
+    ease: "power3.out"
   });
 
   // Ảnh: đều từ dưới lên
   gsap.from(".anh1", {
     scrollTrigger: {
       trigger: section,
-      start: "top 70%",
+      start: "top 80%",
     },
     y: 100,
     opacity: 0,
@@ -309,7 +311,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
   gsap.from(".anh2", {
     scrollTrigger: {
       trigger: section,
-      start: "top 70%",
+      start: "top 80%",
     },
     y: 100,
     opacity: 0,
@@ -321,13 +323,13 @@ gsap.utils.toArray(".section-eight").forEach(section => {
   gsap.from(".anh3", {
     scrollTrigger: {
       trigger: section,
-      start: "top 70%",
+      start: "top 80%",
     },
     y: 100,
     opacity: 0,
     duration: 0.2,
     delay: 0.6,
-    ease: "power2.out"
+    ease: "power3.out"
   });
 
   // Tiêu đề h2
@@ -340,7 +342,7 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     opacity: 0,
     duration: 0.3,
     delay: 0.3,
-    ease: "power2.out"
+    ease: "power3.out"
   });
 
   // Nội dung text và quote
@@ -354,8 +356,8 @@ gsap.utils.toArray(".section-eight").forEach(section => {
       y: 30,
       opacity: 0,
       duration: 0.2,
-      delay: index * 0.02,
-      ease: "power2.out",
+      delay:0.02,
+      ease: "power3.out",
       onStart: () => {
         item.classList.add('active-text');
       }
@@ -380,12 +382,12 @@ gsap.utils.toArray(".section-eight").forEach(section => {
     gsap.from(line, {
       scrollTrigger: {
         trigger: line,
-        start: "top 95%",
+        start: "top 80%",
       },
       scaleX: 0,
       duration: 0.8,
-      delay: i * 0.05 + 0.2,
-      ease: "power2.out",
+      delay: i * 0.05 ,
+      ease: "power3.out",
       transformOrigin: "left center"
     });
   });
