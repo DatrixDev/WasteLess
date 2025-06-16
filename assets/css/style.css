@@ -1005,6 +1005,7 @@ i.regit {
 }
 .section-eight .container{
     padding-top: 20px !important;
+    padding-left: 170px !important;
 }
 
 .section-eight .text-yellow {
@@ -1341,7 +1342,9 @@ html {
    display: flex !important;
    flex-direction: column !important;
 }
-
+.section-eight .container{
+   padding-left: 0px !important;
+}
 
 .section-one .inner-wrap h1 {
   line-height: 1.3;
