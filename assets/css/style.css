@@ -1308,7 +1308,20 @@ i.regit {
 
 
 
+/* Hiệu ứng cho text khi xuất hiện */
+.active-text {
+  transition: all 0.3s ease-out;
+}
 
+.section-eight p,
+.section-eight h5 {
+  will-change: transform, opacity;
+}
+
+/* Làm mượt hiệu ứng scroll */
+html {
+  scroll-behavior: smooth;
+}
 
 
 

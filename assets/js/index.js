@@ -196,5 +196,162 @@ document.querySelectorAll('.item').forEach(item => {
 });
 
 
+// HIỆU ỨNG
+// Khởi tạo GSAP và ScrollTrigger (chỉ cần 1 lần)
+gsap.registerPlugin(ScrollTrigger);
 
-//   HIỆU ỨNG
+// Hiệu ứng cho section-four
+gsap.utils.toArray(".section-four").forEach(section => {
+  gsap.from(section, {
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%",
+      toggleActions: "play none none none"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+  
+  // Hiệu ứng cho các hình ảnh trong section-four
+  gsap.from(".iamge1", {
+    scrollTrigger: {
+      trigger: section,
+      start: "top 70%",
+    },
+    x: -100,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.2,
+    ease: "back.out(1.7)"
+  });
+  
+  gsap.from(".iamge2", {
+    scrollTrigger: {
+      trigger: section,
+      start: "top 70%",
+    },
+    x: 100,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.4,
+    ease: "back.out(1.7)"
+  });
+  
+  gsap.from(".iamge3", {
+    scrollTrigger: {
+      trigger: section,
+      start: "top 70%",
+    },
+    scale: 0.5,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.6,
+    ease: "back.out(1.7)"
+  });
+
+  // Hiệu ứng cho text trong section-four
+  gsap.utils.toArray(".section-four .col-md-6 p").forEach((p, i) => {
+    gsap.from(p, {
+      y: 30,
+      opacity: 0,
+      duration: 0.8,
+      delay: i * 0.3,
+      ease: "power2.out"
+    });
+  });
+
+  // Hiệu ứng cho nút Xem thêm trong section-four
+  gsap.from(".section-four .btn-xemthem", {
+    y: 30,
+    opacity: 0,
+    duration: 0.8,
+    delay: 1,
+    ease: "power2.out"
+  });
+});
+
+// Hiệu ứng cho section-eight
+gsap.utils.toArray(".section-eight").forEach(section => {
+  gsap.from(section, {
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%",
+      toggleActions: "play none none none"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+  
+  // Hiệu ứng cho các hình ảnh
+  gsap.from(".anh1", {
+    y: 100,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.2,
+    ease: "power2.out"
+  });
+  
+  gsap.from(".anh2", {
+    x: 50,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.4,
+    ease: "power2.out"
+  });
+  
+  gsap.from(".anh3", {
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.6,
+    ease: "power2.out"
+  });
+  
+  // Hiệu ứng cho nội dung text
+  gsap.from(".noidung h2", {
+    x: -30,
+    opacity: 0,
+    duration: 0.6,
+    delay: 0.3,
+    ease: "power2.out"
+  });
+
+  // Hiệu ứng cho phần giải pháp
+  const solutions = gsap.utils.toArray(".section-eight .noidung p, .section-eight .noidung h5");
+  solutions.forEach((item, index) => {
+    gsap.from(item, {
+      y: 30,
+      opacity: 0,
+      duration: 1.2,
+      delay: index * 0.5,
+      ease: "power2.out",
+      onStart: () => {
+        item.classList.add('active-text');
+      }
+    });
+  });
+
+  // Hiệu ứng cho nút Xem thêm
+  gsap.from(".section-eight .btn-xemthem", {
+    y: 30,
+    opacity: 0,
+    duration: 1.2,
+    delay: solutions.length * 0.5 + 0.3,
+    ease: "power2.out"
+  });
+
+  // Hiệu ứng cho các đường gạch chân
+  gsap.utils.toArray(".section-eight .border-bottom").forEach((line, i) => {
+    gsap.from(line, {
+      scaleX: 0,
+      duration: 0.8,
+      delay: i * 0.5 + 0.2,
+      ease: "power2.out",
+      transformOrigin: "left center"
+    });
+  });
+});
