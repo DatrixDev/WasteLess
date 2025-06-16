@@ -458,6 +458,12 @@ border-radius: 50%;
     .inner-menu ul li {
         margin-right: 25px;
     }
+    .scroll-top {
+    bottom: 23px;
+    left:  50px;
+    width: 45px;
+    height: 45px;
+}
 }
 @media (max-width: 1118.98px) {
     .header__nav{
@@ -584,6 +590,12 @@ border-radius: 50%;
         width: 100%;
         text-align: center;
     }
+     .scroll-top {
+    bottom: 27px;
+    left:  40px;
+    width: 40px;
+    height: 40px;
+}
     
    
 }
@@ -706,6 +718,12 @@ border-radius: 50%;
     .header__menu__body--content ul li a {
         font-size: 16px;
     }
+        .scroll-top {
+    bottom: 25px;
+    left:  40px;
+    width: 35px;
+    height: 35px;
+}
 }
 
 /* Extra small devices (less than 360px) */
